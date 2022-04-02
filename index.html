@@ -1,292 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Restaurant</title>
-	<link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Rochester&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/39a6a4c449.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" type="text/css" href="./style.css">
-</head>
-<body>
-	<!---------------------- START HEADER SECTION ----------------------->
-	<header>
-		<nav>
-			<a href="" class="logo">Foody</a>
-			<ul class="nav-menu">
-				<li><a href="#">Welcome</a></li>
-				<li><a href="#">Menu</a></li>
-				<li><a href="#">Restaurants</a></li>
-				<li><a href="#">Events</a></li>
-				<li><a href="#">Find Us</a></li>
-				<li><i class="fas fa-search search"></i></li>
-				<li><i class="fas fa-shopping-bag my-bag"></i></li>
-			</ul>
-		</nav>
-		<h2 class="header-title-1">Welcome</h2>
-		<h1 class="header-title-2">5 STARS RESTAURANT</h1>
-		<a class="header-button" href="#">BOOK TABLE</a>
-	</header>
-	<!---------------------- END HEADER SECTION ----------------------->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rochester&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/39a6a4c449.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <!---------------------- START HEADER SECTION ----------------------->
+    <header id="welcome">
+      <nav>
+        <a href="" class="logo">Foody</a>
+        <i class="fa fa-bars menu-bars"></i>
+        <ul class="nav-menu">
+          <li><a href="#welcome">Welcome</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#specialities">Specialities</a></li>
+          <li><a href="#special-menu">Events</a></li>
+          <li><a href="#contact-us">Contact Us</a></li>
+          <li><i class="fas fa-search search"></i></li>
+          <li><i class="fas fa-shopping-bag my-bag"></i></li>
+        </ul>
+      </nav>
+      <h2 class="header-title-1">Welcome</h2>
+      <h1 class="header-title-2">5 STARS RESTAURANT</h1>
+      <a class="header-button" href="#book-table">BOOK TABLE</a>
+    </header>
 
-	<!---------------------- START DISCOVER SECTION ----------------------->
-	<div class="discover-section">
-		<div class="food-item food-border">
-			<div class="food-overlay">
-				<h1 class="discover-h1">Discover</h1>
-				<h2 class="discover-h2">OUR STORY</h2>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam corporis sequi minima ab.</p>
-				<a href="#">ABOUT US</a>
-			</div>
-		</div>
-		<div class="food-item food-1"></div>
-		<div class="food-item food-2"></div>
-	</div>
-	<!---------------------- END DISCOVER SECTION ------------------------->
+    <!---------------------- START DISCOVER SECTION ----------------------->
+    <div class="discover-section">
+      <div class="food-item food-border">
+        <div class="food-overlay">
+          <h1 class="discover-h1">Discover</h1>
+          <h2 class="discover-h2">OUR STORY</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quam
+            corporis sequi minima ab.
+          </p>
+          <a href="">ABOUT US</a>
+        </div>
+      </div>
+      <div class="food-item food-1"></div>
+      <div class="food-item food-2"></div>
+    </div>
 
-	<!------------------- START SPECIALITIES SECTION ---------------------->
-	<div class="specialities-section">
-		<div class="specialities-content">
-			<h1 class="specialities-h1">Specialities</h1>
-			<h2 class="specialities-h2">OUR SERVICES</h2>
-			<div class="specialities-row">
-				<div class="specialities-column">
-					<div class="specialities-image-1">
-						<div class="specialities-overlay">
-							<div class="specialities-overlay-border">
-								<a href="#">VIEW FULL SERVICE</a>
-							</div>
-						</div>
-					</div>
-					<h3 class="specialities-h3">BREAKFEST</h3>
-				</div>
-				<div class="specialities-column">
-					<div class="specialities-image-2">
-						<div class="specialities-overlay">
-							<div class="specialities-overlay-border">
-								<a href="#">VIEW FULL SERVICE</a>
-							</div>
-						</div>
-					</div>
-					<h3 class="specialities-h3">LUNCH</h3>
-				</div>
-				<div class="specialities-column">
-					<div class="specialities-image-3">
-						<div class="specialities-overlay">
-							<div class="specialities-overlay-border">
-								<a href="#">VIEW FULL SERVICE</a>
-							</div>
-						</div>
-					</div>
-					<h3 class="specialities-h3">DINNER</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!------------------- END SPECIALITIES SECTION ---------------------->
+    <!------------------- START SPECIALITIES SECTION ---------------------->
+    <div class="specialities-section" id="specialities">
+      <div class="specialities-content">
+        <h1 class="specialities-h1">Specialities</h1>
+        <h2 class="specialities-h2">OUR SERVICES</h2>
+        <div class="specialities-row">
+          <div class="specialities-column">
+            <div class="specialities-image-1">
+              <div class="specialities-overlay">
+                <div class="specialities-overlay-border">
+                  <a href="">VIEW FULL SERVICE</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="specialities-h3">BREAKFEST</h3>
+          </div>
+          <div class="specialities-column">
+            <div class="specialities-image-2">
+              <div class="specialities-overlay">
+                <div class="specialities-overlay-border">
+                  <a href="">VIEW FULL SERVICE</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="specialities-h3">LUNCH</h3>
+          </div>
+          <div class="specialities-column">
+            <div class="specialities-image-3">
+              <div class="specialities-overlay">
+                <div class="specialities-overlay-border">
+                  <a href="">VIEW FULL SERVICE</a>
+                </div>
+              </div>
+            </div>
+            <h3 class="specialities-h3">DINNER</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-	<!---------------------- START SPECIAL MENU SECTION ------------------------->
-	<div class="special-menu">
-		<h1 class="special-menu-h1">To Day</h1>
-		<h2 class="special-menu-h2">SPECIAL MENU</h2>
+    <!---------------------- START SPECIAL MENU SECTION ------------------------->
+    <div class="special-menu" id="special-menu">
+      <h1 class="special-menu-h1">To Day</h1>
+      <h2 class="special-menu-h2">SPECIAL MENU</h2>
 
-		<div class="special-menu-container">
+      <div class="special-menu-container">
+        <div class="special-menu-column">
+          <div class="col-large col-large-1">
+            <i class="fas fa-ice-cream"></i>
+            <h3 class="special-menu-h3">Desserts</h3>
+            <span class="separator"></span>
+            <h4 class="special-menu-h4">ICE CREAM</h4>
+            <p class="special-menu-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+              magni maxime vitae porro fugiat debitis quam, illo ipsum esse.
+            </p>
+            <h4 class="special-menu-price">FROM $9.99</h4>
+          </div>
+          <div class="col-large col-large-2"></div>
+        </div>
 
-			<div class="special-menu-column">
-				<div class="col-large col-lagre-1">
-					<i class="fas fa-ice-cream"></i>
-					<h3 class="special-menu-h3">Desserts</h3>
-					<span class="separator"></span>
-					<h4 class="special-menu-h4">ICE CREAM</h4>
-					<p class="special-menu-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum magni maxime vitae porro fugiat debitis quam, illo ipsum esse.</p>
-					<h4 class="special-menu-price">FROM $9.99</h4>
-				</div>
-				<div class="col-large col-lagre-2"></div>
-			</div>
+        <div class="special-menu-column">
+          <div class="col-small col-small-1">
+            <i class="fas fa-hamburger"></i>
+            <h3 class="special-menu-h3">Dinner</h3>
+            <span class="separator-orange"></span>
+            <h4 class="special-menu-h4-black">HAMBURGER</h4>
+            <h4 class="special-menu-price">FROM $8.99</h4>
+          </div>
+          <div class="col-small col-small-2"></div>
+          <div class="col-small col-small-3"></div>
+          <div class="col-small col-small-4">
+            <i class="fas fa-pizza-slice"></i>
+            <h3 class="special-menu-h3">Lunch</h3>
+            <span class="separator-orange"></span>
+            <h4 class="special-menu-h4-black">PIZZA</h4>
+            <h4 class="special-menu-price">FROM $17.99</h4>
+          </div>
+        </div>
 
-			<div class="special-menu-column">
-				<div class="col-small col-small-1">
-					<i class="fas fa-hamburger"></i>
-					<h3 class="special-menu-h3">Dinner</h3>
-					<span class="separator-orange"></span>
-					<h4 class="special-menu-h4-black">HAMBURGER</h4>
-					<h4 class="special-menu-price">FROM $8.99</h4>
-				</div>
-				<div class="col-small col-small-2"></div>
-				<div class="col-small col-small-3"></div>
-				<div class="col-small col-small-4">
-					<i class="fas fa-pizza-slice"></i>
-					<h3 class="special-menu-h3">Lunch</h3>
-					<span class="separator-orange"></span>
-					<h4 class="special-menu-h4-black">PIZZA</h4>
-					<h4 class="special-menu-price">FROM $17.99</h4>
-				</div>
-			</div>
+        <div class="special-menu-column">
+          <div class="col-small col-small-5"></div>
+          <div class="col-small col-small-6">
+            <i class="fas fa-fish"></i>
+            <h3 class="special-menu-h3">Lunch</h3>
+            <span class="separator-orange"></span>
+            <h4 class="special-menu-h4-black">SUSHI FISH</h4>
+            <h4 class="special-menu-price">FROM $10.99</h4>
+          </div>
+          <div class="col-small col-small-7">
+            <i class="fas fa-drumstick-bite"></i>
+            <h3 class="special-menu-h3">Dinner</h3>
+            <span class="separator-orange"></span>
+            <h4 class="special-menu-h4-black">CHICKEN GRILLED</h4>
+            <h4 class="special-menu-price">FROM $15.99</h4>
+          </div>
+          <div class="col-small col-small-8"></div>
+        </div>
 
-			<div class="special-menu-column">
-				<div class="col-small col-small-5"></div>
-				<div class="col-small col-small-6">
-					<i class="fas fa-fish"></i>
-					<h3 class="special-menu-h3">Lunch</h3>
-					<span class="separator-orange"></span>
-					<h4 class="special-menu-h4-black">SUSHI FISH</h4>
-					<h4 class="special-menu-price">FROM $10.99</h4>
-				</div>
-				<div class="col-small col-small-7">
-					<i class="fas fa-drumstick-bite"></i>
-					<h3 class="special-menu-h3">Dinner</h3>
-					<span class="separator-orange"></span>
-					<h4 class="special-menu-h4-black">CHICKEN GRILLED</h4>
-					<h4 class="special-menu-price">FROM $15.99</h4>
-				</div>
-				<div class="col-small col-small-8"></div>
-			</div>
+        <div class="special-menu-column">
+          <div class="col-large col-large-3">
+            <i class="fas fa-utensils"></i>
+            <h3 class="special-menu-h3">Lunch</h3>
+            <span class="separator"></span>
+            <h4 class="special-menu-h4">DONER KEBAB</h4>
+            <p class="special-menu-p">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum
+              magni maxime vitae porro fugiat debitis quam, illo ipsum esse.
+            </p>
+            <h4 class="special-menu-price">FROM $12.99</h4>
+          </div>
+          <div class="col-large col-large-4"></div>
+        </div>
+      </div>
+    </div>
 
-			<div class="special-menu-column">
-				<div class="col-large col-lagre-3">
-					<i class="fas fa-utensils"></i>
-					<h3 class="special-menu-h3">Lunch</h3>
-					<span class="separator"></span>
-					<h4 class="special-menu-h4">DONER KEBAB</h4>
-					<p class="special-menu-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum magni maxime vitae porro fugiat debitis quam, illo ipsum esse.</p>
-					<h4 class="special-menu-price">FROM $12.99</h4>
-				</div>
-				<div class="col-large col-lagre-4"></div>
-			</div>
-		</div>
-	</div>
-	<!---------------------- END SPECIAL MENU SECTION ------------------------->
+    <!---------------------- START OUR MENU SECTION ------------------------->
+    <div class="our-menu" id="menu">
+      <h1 class="our-menu-h1">To Day</h1>
+      <h2 class="our-menu-h2">SPECIAL MENU</h2>
+      <div class="our-menu-row">
+        <div class="our-menu-column">
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+        </div>
+        <div class="our-menu-column">
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+          <div class="food-container">
+            <h1 class="food-title">Pizza</h1>
+            <span>-------------------------------------</span>
+            <span class="food-price">$30</span>
+            <h3 class="food-ingredients">
+              Mozzarela, Cheese, Moshrooms, Tomatoes
+            </h3>
+          </div>
+        </div>
+      </div>
+      <a class="our-menu-button" href="">VIEW ALL MENU</a>
+    </div>
 
-	<!---------------------- START OUR MENU SECTION ------------------------->
-	<div class="our-menu">
-		<h1 class="our-menu-h1">To Day</h1>
-		<h2 class="our-menu-h2">SPECIAL MENU</h2>
-		<div class="our-menu-row">
-			<div class="our-menu-column">
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-			</div>
-			<div class="our-menu-column">
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-				<div class="food-container">
-					<h1 class="food-title">Pizza </h1>
-					<span>-------------------------------------</span>
-					<span class="food-price">$30</span>
-					<h3 class="food-ingredients">Mozzarela, Cheese, Moshrooms, Tomatoes</h3>
-				</div>
-			</div>
-		</div>
-		<a class="our-menu-button" href="#">VIEW ALL MENU</a>
-	</div>
-	<!---------------------- END OUR MENU SECTION ------------------------->
+    <!---------------------- START BOOKING TABLE SECTION ------------------------->
+    <div class="booking-table-section" id="book-table">
+      <h1 class="booking-table-h1">Reservation</h1>
+      <h2 class="booking-table-h2">BOOKING TABLE</h2>
 
-	<!---------------------- START BOOKING TABLE SECTION ------------------------->
-	<div class="booking-table-section">
-		<h1 class="booking-table-h1">Reservation</h1>
-		<h2 class="booking-table-h2">BOOKING TABLE</h2>
+      <div class="booking-table-row">
+        <div class="booking-div">
+          <span class="booking-icon">
+            <i class="fa fa-calendar"></i>
+          </span>
+          <span class="booking-data">28.10.2021.</span>
+        </div>
+        <div class="booking-div">
+          <span class="booking-icon">
+            <i class="fa fa-clock-o"></i>
+          </span>
+          <span class="booking-data">07:00 PM</span>
+        </div>
+        <div class="booking-div">
+          <span class="booking-icon">
+            <i class="fa fa-user"></i>
+          </span>
+          <span class="booking-data">2 People</span>
+        </div>
+        <a href="" class="booking-div booking-button"> FIND A TABLE </a>
+      </div>
+    </div>
 
-		<div class="booking-table-row">
-			<div class="booking-div">
-				<span class="booking-icon">
-					<i class="fa fa-calendar"></i>
-				</span>
-				<span class="booking-data">28.10.2021.</span>
-			</div>
-			<div class="booking-div">
-				<span class="booking-icon">
-					<i class="fa fa-clock-o"></i>
-				</span>
-				<span class="booking-data">07:00 PM</span>
-			</div>
-			<div class="booking-div">
-				<span class="booking-icon">
-					<i class="fa fa-user"></i>
-				</span>
-				<span class="booking-data">2 People</span>
-			</div>
-			<a href="#" class="booking-div booking-button">
-				FIND A TABLE
-			</a>
-		</div>
-	</div>
-	<!---------------------- END BOOKING TABLE SECTION ------------------------->
+    <!---------------------- START FOOOTER SECTION ----------------------->
+    <footer id="contact-us">
+      <div class="footer-row">
+        <div class="footer-column">
+          <h3 class="footer-title">CONTACT US</h3>
+          <p class="footer-text">Main Avenue</p>
+          <p class="footer-text">234 Building Rose</p>
+          <p class="footer-text">M1 345 New York</p>
+          <p class="footer-text">restaurant27@gmail.com</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">OPENING HOUR</h3>
+          <p class="footer-text">Monday - Thursday</p>
+          <p class="footer-text">06:30 AM - 10:00 PM</p>
+          <p class="footer-text">Friday & Saturday</p>
+          <p class="footer-text">08:00 AM - 10:00 PM</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">FOLLOW US</h3>
+          <p class="footer-text">Facebook</p>
+          <p class="footer-text">Instagram</p>
+          <p class="footer-text">Twiter</p>
+          <p class="footer-text">Pinterest</p>
+        </div>
+        <div class="footer-column">
+          <h3 class="footer-title">NEWSLETTER</h3>
+          <input
+            type="email"
+            placeholder="Enter your email..."
+            class="footer-email"
+          />
+          <a href="" class="footer-button">SUBSCRIBE</a>
+        </div>
+      </div>
 
-	<!---------------------- START FOOOTER SECTION ----------------------->
-	<footer>
-		<div class="footer-row">
-			<div class="footer-column">
-				<h3 class="footer-title">CONTACT US</h3>
-				<p class="footer-text">Main Avenue</p>
-				<p class="footer-text">234 Building Rose</p>
-				<p class="footer-text">M1 345 New York</p>
-				<p class="footer-text">restaurant27@gmail.com</p>
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-title">OPENING HOUR</h3>
-				<p class="footer-text">Monday - Thursday</p>
-				<p class="footer-text">06:30 AM - 10:00 PM</p>
-				<p class="footer-text">Friday & Saturday</p>
-				<p class="footer-text">08:00 AM - 10:00 PM</p>
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-title">FOLLOW US</h3>
-				<p class="footer-text">Facebook</p>
-				<p class="footer-text">Instagram</p>
-				<p class="footer-text">Twiter</p>
-				<p class="footer-text">Pinterest</p>
-			</div>
-			<div class="footer-column">
-				<h3 class="footer-title">NEWSLETTER</h3>
-				<input type="email" placeholder="Enter your email..." class="footer-email">
-				<a href="#" class="footer-button">SUBSCRIBE</a>
-			</div>
-		</div>
+      <div class="copyright">
+        Copyright &copy; 2021 <span class="copyright-name">Dejan Nadoba</span>.
+        All rights reserved.
+      </div>
+    </footer>
 
-		<div class="copyright">
-			Copyright &copy; 2021 <span class="copyright-name">Dejan Nadoba</span>. All rights reserved.
-		</div>
-	</footer>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>

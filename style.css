@@ -1,346 +1,366 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.4)), url("./images/food.jpg");
-    background-size: cover;
-    height: 800px;
-    text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("./images/food.jpg");
+  background-size: cover;
+  height: 800px;
+  text-align: center;
 }
 
 .logo {
-    color: rgb(255, 255, 255);
-    font-family: 'Yesteryear', cursive;
-    font-size: 40px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out all;
+  color: rgb(255, 255, 255);
+  font-family: "Yesteryear", cursive;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.3s ease-in-out all;
 }
 
 .logo:hover {
-    color: #f2ac32;
+  color: #f2ac32;
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  align-items: center;
+}
+
+nav.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .nav-menu {
-    list-style: none;
-    color: white;
-    display: flex;
+  list-style: none;
+  color: white;
+  display: flex;
 }
 
 .nav-menu li {
-    font-size: 16px;
-    text-transform: uppercase;
-    font-family: 'Oswald', sans-serif;
-    padding: 0 10px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  padding: 0 10px;
 }
 
 .nav-menu li a {
-    text-decoration: none;
-    color: white;
-    transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-menu li a:hover {
-    color: #f2ac32;
+  color: #f2ac32;
 }
 
 .header-title-1 {
-    color: #f2ac32;
-    font-size: 44px;
-    font-family: 'Rochester', cursive;
-    margin-top: 170px;
-    margin-bottom: 15px;
+  color: #f2ac32;
+  font-size: 44px;
+  font-family: "Rochester", cursive;
+  margin-top: 170px;
+  margin-bottom: 15px;
 }
 
 .header-title-2 {
-    font-family: 'Oswald', sans-serif;
-    color: white;
-    font-size: 55px;
-    letter-spacing: 6px;
-    margin-bottom: 30px;
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 55px;
+  letter-spacing: 6px;
+  margin-bottom: 30px;
 }
 
 .header-button {
-    color: white;
-    background-color: #f2ac32;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    transition: all 0.3s ease-in-out;
-    border-radius: 2px;
+  color: white;
+  background-color: #f2ac32;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2px;
 }
 
 .header-button:hover {
-    background-color: #cc922c;
+  background-color: #cc922c;
 }
 
 .my-bag {
-    font-size: 26px;
+  font-size: 26px;
+}
+
+.menu-bars {
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
 }
 
 /************************* Discover Section ********************/
 .discover-section {
-    background-color: #e6e6e6;
-    display: flex;
-    justify-content: center;
-    padding: 100px;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  padding: 100px;
 }
 
 .food-border {
-    border: solid 2px #f2ac32;
-    position: relative;
+  border: solid 2px #f2ac32;
+  position: relative;
 }
 
 .food-overlay {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    padding: 100px 10px 0 10px;
-    background-color: white;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 100px 10px 0 10px;
+  background-color: white;
+  height: 100%;
+  width: 100%;
 }
 
 .food-item {
-    height: 400px;
-    width: 270px;
-    margin: 0 30px;
-    text-align: center;
+  height: 400px;
+  width: 270px;
+  margin: 0 30px;
+  text-align: center;
 }
 
 .food-item p {
-    font-size: 16px;
-    color: #919191;
-    margin-bottom: 20px;
+  font-size: 16px;
+  color: #919191;
+  margin-bottom: 20px;
 }
 
 .food-item a {
-    text-decoration: none;
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif; 
-    color: #f2ac32;
-    transition: all 0.1s ease-in;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Oswald", sans-serif;
+  color: #f2ac32;
+  transition: all 0.1s ease-in;
 }
 
 .food-item a:hover {
-    color: #e6960d;
+  color: #e6960d;
 }
 
 .food-1 {
-    background-image: url("./images/food-1.jpg");
-    background-size: cover;
-    background-position: center;
-    margin-top: -30px;
-    -webkit-box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
-    box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
+  background-image: url("./images/food-1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: -30px;
+  box-shadow: -7px 7px 14px -4px rgba(0, 0, 0, 0.75);
 }
 
 .food-2 {
-    background-image: url("./images/food-2.jpg");
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
-    box-shadow: -7px 7px 14px -4px rgba(0,0,0,0.75);
+  background-image: url("./images/food-2.jpg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: -7px 7px 14px -4px rgba(0, 0, 0, 0.75);
 }
 
 .discover-h1 {
-    color: #f2ac32;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 15px;
+  color: #f2ac32;
+  font-family: "Rochester", cursive;
+  margin-bottom: 15px;
 }
 
 .discover-h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 30px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
 }
 
 /************************* Specialities Section ********************/
 .specialities-section {
-    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("./images/specialities.jpg");
-    background-size: cover;
-    padding: 100px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("./images/specialities.jpg");
+  background-size: cover;
+  padding: 100px 0;
 }
 
 .specialities-content {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
 .specialities-content::before {
-    content: '';
-    position: absolute;
-    border-top: 100px solid #e6e6e6;
-    border-right: 98.7vw solid transparent;
-    top: -150px;
-    left: 0;
+  content: "";
+  position: absolute;
+  border-top: 100px solid #e6e6e6;
+  border-right: 98.7vw solid transparent;
+  top: -150px;
+  left: 0;
 }
 
 .specialities-content::after {
-    content: '';
-    position: absolute;
-    border-bottom: 100px solid #e6e6e6;
-    border-left: 100vw solid transparent;
-    bottom: -100px;
-    right: 0;
+  content: "";
+  position: absolute;
+  border-bottom: 100px solid #e6e6e6;
+  border-left: 100vw solid transparent;
+  bottom: -100px;
+  right: 0;
 }
 
 .specialities-h1 {
-    color: #f2ac32;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 15px;
-    margin-top: 50px;
-    font-size: 50px;
+  color: #f2ac32;
+  font-family: "Rochester", cursive;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  font-size: 50px;
 }
 
 .specialities-h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-bottom: 100px;
-    color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 100px;
+  color: white;
 }
 
 .specialities-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .specialities-image-1,
 .specialities-image-2,
 .specialities-image-3 {
-    width: 100%;
-    height: 250px;
-    margin-bottom: 30px;
-    position: relative;
+  width: 100%;
+  height: 250px;
+  margin-bottom: 30px;
+  position: relative;
 }
 
 .specialities-image-1:hover .specialities-overlay,
 .specialities-image-2:hover .specialities-overlay,
 .specialities-image-3:hover .specialities-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .specialities-column {
-    width: 350px;
-    margin: 0 40px;
+  width: 350px;
+  margin: 0 40px;
 }
 
 .specialities-image-1 {
-    background-image: url("./images/breakfest.jpg");
-    background-size: cover;
+  background-image: url("./images/breakfest.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .specialities-image-2 {
-    background-image: url("./images/lunch.jpg");
-    background-size: cover;
+  background-image: url("./images/lunch.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .specialities-image-3 {
-    background-image: url("./images/dinner.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("./images/dinner.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .specialities-h3 {
-    font-size: 26px;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
+  font-size: 26px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 .specialities-overlay {
-    background-color: rgba(242, 172, 50, 0.7);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    opacity: 0;
-    transition: 0.3s ease-in-out all;
-    cursor: pointer;
+  background-color: rgba(242, 172, 50, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s ease-in-out all;
+  cursor: pointer;
 }
 
 .specialities-overlay-border {
-    border: 2px solid white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    font-size: 25px;
+  border: 2px solid white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  font-size: 25px;
 }
 
 .specialities-overlay-border a {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
 .specialities-overlay-border a:hover {
-    color: rgb(230, 230, 230);
+  color: rgb(230, 230, 230);
 }
 
 /************************* Special Menu Section ********************/
 .special-menu {
-    background-color: #e6e6e6;
-    text-align: center;
-    padding: 50px 15px 100px 15px;
+  background-color: #e6e6e6;
+  text-align: center;
+  padding: 50px 15px 100px 15px;
 }
 
 .special-menu-h1 {
-    color: #f2ac32;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 15px;
-    font-size: 40px;
+  color: #f2ac32;
+  font-family: "Rochester", cursive;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
 
 .special-menu-h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
-    color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  color: black;
 }
 
 .special-menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
 }
 
 .special-menu-column {
-    width: 50%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .col-large {
-    width: 50%;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 50%;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.col-lagre-1,
-.col-lagre-3 {
-    background-color: #f2ac32;
-    color: white;
-    padding: 50px 30px;
+.col-large-1,
+.col-large-3 {
+  background-color: #f2ac32;
+  color: white;
+  padding: 50px 30px;
 }
 
 .fa-utensils,
@@ -349,297 +369,482 @@ nav {
 .fa-hamburger,
 .fa-ice-cream,
 .fa-pizza-slice {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .special-menu-h3 {
-    font-family: 'Rochester', cursive;
-    font-size: 22px;
-    letter-spacing: 3px;
+  font-family: "Rochester", cursive;
+  font-size: 22px;
+  letter-spacing: 3px;
 }
 
 .separator {
-    align-self: center;
-    border-top: 1px solid white;
-    width: 40px;
+  align-self: center;
+  border-top: 1px solid white;
+  width: 40px;
 }
 
 .special-menu-h4 {
-    font-family: 'Oswald', sans-serif; 
-    letter-spacing: 3px;
-    font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
 }
 
 .special-menu-price {
-    font-family: 'Oswald', sans-serif; 
-    letter-spacing: 3px;
-    font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 14px;
 }
 
 .special-menu-p {
-    font-family: 'Rochester', cursive;
+  font-family: "Rochester", cursive;
 }
 
-.col-lagre-2 {
-    background-image: url("./images/ice-cream.jpg");
-    background-size: cover;
+.col-large-2 {
+  background-image: url("./images/ice-cream.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.col-lagre-4 {
-    background-image: url("./images/kebab.jpg");
-    background-size: cover;
+.col-large-4 {
+  background-image: url("./images/kebab.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .col-small {
-    width: 50%;
-    height: 225px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  width: 50%;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .col-small-1,
 .col-small-4,
 .col-small-6,
 .col-small-7 {
-    background-color: white;
-    color: #f2ac32;
-    padding: 20px 30px;
+  background-color: white;
+  color: #f2ac32;
+  padding: 20px 30px;
 }
 
 .separator-orange {
-    align-self: center;
-    border-top: 1px solid #f2ac32;
-    width: 40px;
+  align-self: center;
+  border-top: 1px solid #f2ac32;
+  width: 40px;
 }
 
 .special-menu-h4-black {
-    font-family: 'Oswald', sans-serif; 
-    letter-spacing: 3px;
-    font-size: 20px;
-    color: black;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 3px;
+  font-size: 20px;
+  color: black;
 }
 
 .col-small-2 {
-    background-image: url("./images/hamburger.jpg");
-    background-size: cover;
+  background-image: url("./images/hamburger.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .col-small-3 {
-    background-image: url("./images/pizza.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("./images/pizza.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .col-small-5 {
-    background-image: url("./images/sushi-fish.jpg");
-    background-size: cover;
+  background-image: url("./images/sushi-fish.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .col-small-8 {
-    background-image: url("./images/chicken.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("./images/chicken.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 /************************* Our Menu Section ********************/
 .our-menu {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./images/our-menu.jpg");
-    background-size: cover;
-    text-align: center;
-    padding: 50px 15px 100px 15px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/our-menu.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 50px 15px 100px 15px;
 }
 
 .our-menu-h1 {
-    color: #f2ac32;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 15px;
-    font-size: 40px;
+  color: #f2ac32;
+  font-family: "Rochester", cursive;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
 
 .our-menu-h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
-    color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+  color: white;
 }
 
 .our-menu-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .our-menu-column {
-    margin: 50px;
-    text-align: start;
+  margin: 50px;
+  text-align: start;
 }
 
 .food-container {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 30px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
 }
 
 .food-title {
-    display: inline;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 400;
+  display: inline;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .food-price {
-    font-size: 22px;
-    color: #f2ac32;
+  font-size: 22px;
+  color: #f2ac32;
 }
 
 .food-ingredients {
-    text-transform: lowercase;
-    font-weight: 400;
-    font-size: 13px;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 13px;
 }
 
 .our-menu-button {
-    border: 1px white solid;
-    padding: 10px 30px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px;
-    transition: all 0.3s ease-in-out;
+  border: 1px white solid;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in-out;
 }
 
 .our-menu-button:hover {
-    background-color: rgba(255, 255, 255, 0.7);
-    color: black;
+  background-color: rgba(255, 255, 255, 0.7);
+  color: black;
 }
 
 /************************* Booking Table Section ********************/
 .booking-table-section {
-    background-color: #e6e6e6;
-    padding: 50px 15px 100px 15px;
-    text-align: center;
+  background-color: #e6e6e6;
+  padding: 50px 15px 100px 15px;
+  text-align: center;
 }
 
 .booking-table-h1 {
-    color: #f2ac32;
-    font-family: 'Rochester', cursive;
-    margin-bottom: 15px;
-    font-size: 40px;
+  color: #f2ac32;
+  font-family: "Rochester", cursive;
+  margin-bottom: 15px;
+  font-size: 40px;
 }
 
 .booking-table-h2 {
-    font-family: 'Oswald', sans-serif; 
-    font-size: 40px;
-    letter-spacing: 2px;
-    margin-bottom: 50px;
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 50px;
 }
 
 .booking-table-row {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .booking-div {
-    margin: 20px;
-    background-color: white;
-    font-family: 'Oswald', sans-serif;
+  margin: 20px;
+  background-color: white;
+  font-family: "Oswald", sans-serif;
 }
 
 .booking-icon {
-    padding: 10px 20px;
-    display: inline-block;
-    border-right: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  display: inline-block;
+  border-right: 1px solid #e6e6e6;
 }
 
 .booking-data {
-    padding-right: 20px;
+  padding-right: 20px;
 }
 
 .booking-button {
-    background-color: #f2ac32;
-    color: white;
-    letter-spacing: 2px;
-    text-decoration: none;
-    padding: 10px 40px;
-    transition: all ease-in-out 0.3s;
+  background-color: #f2ac32;
+  color: white;
+  letter-spacing: 2px;
+  text-decoration: none;
+  padding: 10px 40px;
+  transition: all ease-in-out 0.3s;
 }
 
 .booking-button:hover {
-    background-color: #cc922c;
+  background-color: #cc922c;
 }
 
 /************************* Footer Section ********************/
 footer {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("./images/footer.jpg");
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0 20px 0;
-    color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("./images/footer.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0 20px 0;
+  color: white;
 }
 
 .footer-row {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 150px;
 }
 
 .footer-column {
-    margin: 0 70px;
+  margin: 0 70px;
 }
 
 .footer-title {
-    color: #e6ad4b;
-    font-family: 'Oswald', sans-serif;
-    margin-bottom: 30px;
-    font-weight: 400;
+  color: #e6ad4b;
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .footer-text {
-    margin: 10px 0;font-size: 14px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+  margin: 10px 0;
+  font-size: 14px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
 }
 
-.footer-email{
-    padding: 10px 20px;
-    width: 210px;
-    height: 40px;
-    font-size: 12px;
-    margin-bottom: 25px;
+.footer-email {
+  padding: 10px 20px;
+  width: 210px;
+  height: 40px;
+  font-size: 12px;
+  margin-bottom: 25px;
 }
 
 .footer-button {
-    width: 210px;
-    height: 40px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    background-color: #f2ac32;
-    display: block;
-    text-align: center;
-    padding: 10px 25px;
-    font-size: 14px;
-    transition: all ease-in-out 0.3s;
-    border-radius: 3px;
+  width: 210px;
+  height: 40px;
+  text-decoration: none;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  background-color: #f2ac32;
+  display: block;
+  text-align: center;
+  padding: 10px 25px;
+  font-size: 14px;
+  transition: all ease-in-out 0.3s;
+  border-radius: 3px;
 }
 
 .footer-button:hover {
-    background-color: #cc922c;
+  background-color: #cc922c;
 }
 
 .copyright {
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.4);
-    padding: 10px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 14px;
-    letter-spacing: 1px;
-    opacity: 0.9;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  padding: 10px;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  opacity: 0.9;
 }
 
 .copyright-name {
-    color: #e6ad4b;
+  color: #e6ad4b;
+}
+
+/* Media */
+
+@media (max-width: 1093px) {
+  .footer-column {
+    margin: 0 60px;
+  }
+}
+
+@media (max-width: 1093px) {
+  .footer-column {
+    margin: 0 29px;
+  }
+
+  .food-item {
+    margin: 0 15px;
+  }
+
+  .food-1 {
+    margin-top: -30px;
+  }
+
+  .discover-section {
+    padding: 100px 40px;
+  }
+
+  .specialities-column {
+    margin: 0 15px;
+  }
+
+  .special-menu-container {
+    width: 90%;
+  }
+
+  .booking-div {
+    margin: 20px 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 30px 20px;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    position: absolute;
+    right: 8px;
+    top: 80px;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .search,
+  .my-bag {
+    display: none;
+  }
+
+  .menu-bars {
+    display: block;
+  }
+
+  footer {
+    padding: 70px 0 20px 0;
+  }
+
+  .footer-row {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+    justify-items: center;
+    margin-bottom: 100px;
+  }
+
+  .footer-column {
+    margin: 0px 0px;
+    text-align: center;
+  }
+
+  .discover-section {
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .food-item {
+    margin: 0px 0px;
+  }
+
+  .food-overlay {
+    left: 15px;
+  }
+
+  .food-1 {
+    margin-top: 0px;
+  }
+
+  .specialities-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .special-menu-container {
+    width: 100%;
+  }
+
+  .col-large-1,
+  .col-large-3 {
+    padding: 15px;
+  }
+
+  .col-small-1 {
+    padding: 20px 10px;
+  }
+
+  .col-small-7 {
+    padding: 20px 14px;
+  }
+
+  .special-menu-h4-black {
+    font-size: 14px;
+  }
+
+  .our-menu-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .booking-table-row {
+    display: grid;
+  }
+
+  .booking-div {
+    display: flex;
+    align-items: center;
+  }
+
+  .booking-data {
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-row {
+    grid-template-columns: 50%;
+  }
+
+  .our-menu-column {
+    margin: 50px 5px;
+  }
+
+  .special-menu-column {
+    width: 100%;
+  }
+
+  .specialities-column {
+    width: 280px;
+  }
+
+  .header-title-2 {
+    font-size: 44px;
+  }
+
+  header {
+    height: 600px;
+  }
+
+  .header-title-1 {
+    margin-top: 60px;
+  }
 }
