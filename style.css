@@ -29,10 +29,12 @@ header {
 }
 
 nav {
+  max-width: 1440px;
   display: flex;
   justify-content: space-between;
   padding: 30px 40px;
   align-items: center;
+  margin: auto;
 }
 
 nav.sticky {
@@ -336,6 +338,7 @@ nav.sticky {
 }
 
 .special-menu-container {
+  max-width: 1440px;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
