@@ -30,17 +30,18 @@ header {
 
 nav {
   max-width: 1440px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 30px 40px;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 nav.sticky {
   position: fixed;
+  max-width: none;
   top: 0;
-  width: 100%;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 1;
